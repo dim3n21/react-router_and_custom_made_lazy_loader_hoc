@@ -1,6 +1,7 @@
 ================================== REACT ROUTER ==================================
 
 ----------------------- Basic -----------------------
+
   import { default as Router, Route } from 'react-router'
 
   const routes = (
@@ -15,6 +16,7 @@
 
 
 ----------------------- Nesting -----------------------
+
   const routes = (
     <Route handler={Chrome}>
       <Route path='about' handler={About} />
@@ -38,6 +40,7 @@
 
 
 ----------------------- URL params -----------------------
+
   var Message = React.createClass({
     componentDidMount: function () {
       // from the path `/inbox/messages/:id`
@@ -46,6 +49,7 @@
 
 
 ----------------------- Link -----------------------
+
   import { Link } from 'react-router'
 
   <!-- make a named route `user` -->
@@ -57,6 +61,7 @@
 
 
 ----------------------- Other config -----------------------
+
   <Route path='/'>
     <DefaultRoute handler={Home} />
     <NotFoundRoute handler={NotFound} />
@@ -69,6 +74,7 @@
 
 
 ----------------------- Router.create -----------------------
+
   var router = Router.create({
     routes: <Route>...</Route>,
     location: Router.HistoryLocation
@@ -78,6 +84,7 @@
 
 
 ----------------------- Navigation -----------------------
+
 import { Navigation } from 'react-router'
 
   React.createClass({
